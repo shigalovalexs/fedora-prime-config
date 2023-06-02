@@ -1,0 +1,12 @@
+[org/gnome/desktop/input-sources]
+xkb-options=['']
+
+[org/gnome/desktop/peripherals/touchpad]
+speed=0.4
+tap-to-click=true
+
+[org/gnome/mutter]
+experimental-features=['scale-monitor-framebuffer']
+
+[org/gnome/shell/keybindings]
+show-screenshot-ui=['<Shift><Super>S']
