@@ -1,6 +1,9 @@
 [org/gnome/desktop/input-sources]
 xkb-options=['']
 
+[org/gnome/desktop/interface]
+cursor-theme='Bibata-Original-Ice'
+
 [org/gnome/desktop/peripherals/touchpad]
 speed=0.4
 tap-to-click=true

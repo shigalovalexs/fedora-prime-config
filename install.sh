@@ -1,7 +1,14 @@
 #! /bin/bash
 
 echo "Copy configuration files"
-cp -v -r etc/* /etc
+cp -vr etc/* /etc
+
+echo "Install Bibata Original Ice cursor theme"
+wget -P /tmp https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.3/Bibata-Original-Ice.tar.gz
+tar -xvf /tmp/Bibata-Original-Ice.tar.gz -C /usr/share/icons
+
+echo "Update system databases"
+dconf update
 
 echo "Update package cache"
 dnf check-update
