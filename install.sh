@@ -15,7 +15,7 @@ dnf check-update
 
 echo "Install TLP"
 dnf install tlp tlp-rdw --assumeyes
-dnf remove power-profiles-daemon
+dnf remove power-profiles-daemon --assumeyes
 systemctl enable --now tlp.service
 systemctl mask systemd-rfkill.service systemd-rfkill.socket
 
